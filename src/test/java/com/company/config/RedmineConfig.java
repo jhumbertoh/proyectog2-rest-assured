@@ -7,6 +7,7 @@ import io.restassured.filter.log.RequestLoggingFilter;
 import io.restassured.filter.log.ResponseLoggingFilter;
 import io.restassured.specification.RequestSpecification;
 import io.restassured.specification.ResponseSpecification;
+import org.junit.AfterClass;
 import org.junit.BeforeClass;
 
 public class RedmineConfig {
@@ -33,4 +34,10 @@ public class RedmineConfig {
         RestAssured.requestSpecification = requestSpecification;
         RestAssured.responseSpecification = responseSpecification;
     }
+
+    @AfterClass
+    public static void cleanUp(){
+        RestAssured.reset();
+    }
+
 }

@@ -33,7 +33,7 @@ public class RedmineOtherTests extends RedmineConfig {
                 .get(RedmineEndpoints.LISTAR_REDMINE_ISSUES_JSON).
         then()
                 .statusCode(200)
-                .body("issues[0].subject", equalTo("I cannot create a users."));
+                .body("issues[0].subject", equalTo("I cannot create a user."));
     }
 
     @Test
