@@ -22,7 +22,7 @@ public class RedmineConfig {
                 .setPort(RedmineEnvironments.REDMINE_LOCAL_PORT)
                 .setBasePath("/")
                 .addHeader("Content-Type","application/json")
-                .addHeader("X-Redmine-API-Key","475338c5e8fe95ef9f9c1cae8cb69610e2d413ac")
+                .addHeader("X-Redmine-API-Key","f04abfe57d3828d1a53df2db5699e2d108680e0b")
                 .addFilter(new RequestLoggingFilter())
                 .addFilter(new ResponseLoggingFilter())
                 .build();
