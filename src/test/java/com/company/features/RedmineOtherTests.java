@@ -22,7 +22,8 @@ public class RedmineOtherTests extends RedmineConfig {
                 .get(RedmineEndpoints.OBTENER_REDMINE_ISSUE_JSON).
         then()
                 .statusCode(200)
-                .body("issue.start_date",equalTo("2020-08-15"));
+                .body("issue.start_date",equalTo("2020-08-15"))
+        ;
     }
 
     @Test
